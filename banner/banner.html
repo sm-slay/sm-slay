@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:2560px;height:1440px;overflow:hidden;background:#07080f}
+.wrap{position:relative;width:2560px;height:1440px;font-family:"Inter Display","Inter",sans-serif;
+ background:
+  radial-gradient(ellipse 900px 500px at 50% 50%, rgba(124,58,237,.35), transparent 70%),
+  radial-gradient(ellipse 700px 420px at 30% 55%, rgba(6,182,212,.22), transparent 70%),
+  radial-gradient(ellipse 700px 420px at 72% 45%, rgba(236,72,153,.18), transparent 70%),
+  linear-gradient(180deg,#05060c 0%,#0b0d1c 50%,#05060c 100%);}
+.grid{position:absolute;inset:0;
+ background-image:linear-gradient(rgba(120,140,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(120,140,255,.07) 1px,transparent 1px);
+ background-size:64px 64px;
+ -webkit-mask-image:radial-gradient(ellipse 1300px 650px at 50% 50%,#000 30%,transparent 85%);}
+.code{position:absolute;font-family:"DejaVu Sans Mono",monospace;font-size:26px;line-height:1.6;color:rgba(160,175,255,.18);white-space:pre}
+.err{color:rgba(244,114,182,.30)} .ok{color:rgba(52,211,153,.30)} .k{color:rgba(34,211,238,.30)}
+.center{position:absolute;left:507px;top:509px;width:1546px;height:423px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+h1{margin:0;font-size:250px;font-weight:800;letter-spacing:.08em;line-height:1;padding-left:.08em;
+ background:linear-gradient(90deg,#22d3ee 0%,#a78bfa 50%,#f472b6 100%);-webkit-background-clip:text;color:transparent;
+ filter:drop-shadow(0 0 40px rgba(167,139,250,.45))}
+.tag{margin-top:22px;font-size:46px;font-weight:500;color:#c7cbe6;letter-spacing:.32em;text-transform:uppercase}
+.tag b{color:#22d3ee;font-weight:700}
+.line{width:520px;height:3px;margin-top:30px;background:linear-gradient(90deg,transparent,#a78bfa,transparent)}
+.cursor{display:inline-block;width:110px;height:24px;background:#f472b6;margin-left:20px;vertical-align:0;box-shadow:0 0 30px #f472b6}
+</style></head><body><div class="wrap">
+<div class="grid"></div>
+<div class="code" style="left:90px;top:120px">$ <span class="k">brew</span> install node
+<span class="err">Error: EACCES: permission denied</span>
+$ <span class="k">sudo</span> chown -R $(whoami) /usr/local
+<span class="ok">✓ fixed</span></div>
+<div class="code" style="left:1880px;top:110px"><span class="k">if</span> (bug) {
+  <span class="k">return</span> fix(bug);
+}
+<span class="ok">// build passed ✓</span></div>
+<div class="code" style="left:110px;top:1080px"><span class="err">zsh: command not found: python</span>
+$ <span class="k">alias</span> python=python3
+<span class="ok">✓ resolved</span></div>
+<div class="code" style="left:1850px;top:1060px"><span class="err">404</span> · <span class="err">500</span> · <span class="err">ENOENT</span> · <span class="err">SIGSEGV</span>
+debugging one error
+at a time<span class="ok">_</span></div>
+<div class="center">
+ <h1>SITRAL<span class="cursor"></span></h1>
+ <div class="line"></div>
+ <div class="tag">tech <b>·</b> code <b>·</b> fixes</div>
+</div>
+</div></body></html>
