@@ -11,35 +11,39 @@ html,body{margin:0;width:2560px;height:1440px;overflow:hidden;background:#07080f
  background-image:linear-gradient(rgba(120,140,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(120,140,255,.07) 1px,transparent 1px);
  background-size:64px 64px;
  -webkit-mask-image:radial-gradient(ellipse 1300px 650px at 50% 50%,#000 30%,transparent 85%);}
-.code{position:absolute;font-family:"DejaVu Sans Mono",monospace;font-size:26px;line-height:1.6;color:rgba(160,175,255,.18);white-space:pre}
-.err{color:rgba(244,114,182,.30)} .ok{color:rgba(52,211,153,.30)} .k{color:rgba(34,211,238,.30)}
+svg.chart{position:absolute;left:0;top:0}
+.card{position:absolute;padding:22px 30px;border-radius:20px;background:rgba(255,255,255,.035);border:1px solid rgba(167,139,250,.18);color:rgba(199,203,230,.55);font-size:24px;font-weight:500;letter-spacing:.04em}
+.card .v{display:block;font-size:52px;font-weight:800;letter-spacing:0;margin-top:4px}
+.c1 .v{color:rgba(34,211,238,.6)} .c2 .v{color:rgba(167,139,250,.65)} .c3 .v{color:rgba(244,114,182,.6)} .c4 .v{color:rgba(52,211,153,.6)}
 .center{position:absolute;left:507px;top:509px;width:1546px;height:423px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-h1{margin:0;font-size:250px;font-weight:800;letter-spacing:.08em;line-height:1;padding-left:.08em;
+h1{margin:0;font-size:200px;font-weight:800;letter-spacing:.08em;line-height:1;padding-left:.08em;
  background:linear-gradient(90deg,#22d3ee 0%,#a78bfa 50%,#f472b6 100%);-webkit-background-clip:text;color:transparent;
  filter:drop-shadow(0 0 40px rgba(167,139,250,.45))}
-.tag{margin-top:22px;font-size:46px;font-weight:500;color:#c7cbe6;letter-spacing:.32em;text-transform:uppercase}
+.sub{margin-top:6px;font-size:58px;font-weight:600;color:#e6e8f5;letter-spacing:.62em;padding-left:.62em}
+.line{width:520px;height:3px;margin-top:26px;background:linear-gradient(90deg,transparent,#a78bfa,transparent)}
+.tag{margin-top:22px;font-size:36px;font-weight:500;color:#c7cbe6;letter-spacing:.28em;text-transform:uppercase}
 .tag b{color:#22d3ee;font-weight:700}
-.line{width:520px;height:3px;margin-top:30px;background:linear-gradient(90deg,transparent,#a78bfa,transparent)}
-.cursor{display:inline-block;width:110px;height:24px;background:#f472b6;margin-left:20px;vertical-align:0;box-shadow:0 0 30px #f472b6}
+.url{position:absolute;right:80px;bottom:520px;font-size:0}
+.web{margin-top:16px;font-size:30px;font-weight:600;color:#f472b6;letter-spacing:.08em}
 </style></head><body><div class="wrap">
 <div class="grid"></div>
-<div class="code" style="left:90px;top:120px">$ <span class="k">brew</span> install node
-<span class="err">Error: EACCES: permission denied</span>
-$ <span class="k">sudo</span> chown -R $(whoami) /usr/local
-<span class="ok">✓ fixed</span></div>
-<div class="code" style="left:1880px;top:110px"><span class="k">if</span> (bug) {
-  <span class="k">return</span> fix(bug);
-}
-<span class="ok">// build passed ✓</span></div>
-<div class="code" style="left:110px;top:1080px"><span class="err">zsh: command not found: python</span>
-$ <span class="k">alias</span> python=python3
-<span class="ok">✓ resolved</span></div>
-<div class="code" style="left:1850px;top:1060px"><span class="err">404</span> · <span class="err">500</span> · <span class="err">ENOENT</span> · <span class="err">SIGSEGV</span>
-debugging one error
-at a time<span class="ok">_</span></div>
+<svg class="chart" width="2560" height="1440" viewBox="0 0 2560 1440">
+ <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity=".0"/><stop offset=".35" stop-color="#22d3ee" stop-opacity=".35"/><stop offset=".7" stop-color="#a78bfa" stop-opacity=".35"/><stop offset="1" stop-color="#f472b6" stop-opacity=".55"/></linearGradient>
+ <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa" stop-opacity=".12"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient></defs>
+ <path d="M0 1300 C 300 1280, 420 1220, 640 1230 S 980 1150, 1200 1120 S 1560 1080, 1760 980 S 2150 860, 2300 700 S 2480 520, 2560 420 L2560 1440 L0 1440Z" fill="url(#f)"/>
+ <path d="M0 1300 C 300 1280, 420 1220, 640 1230 S 980 1150, 1200 1120 S 1560 1080, 1760 980 S 2150 860, 2300 700 S 2480 520, 2560 420" fill="none" stroke="url(#g)" stroke-width="5"/>
+ <circle cx="2300" cy="700" r="10" fill="#f472b6" opacity=".7"/>
+ <g opacity=".22" fill="#a78bfa"><rect x="140" y="330" width="40" height="80" rx="6"/><rect x="200" y="290" width="40" height="120" rx="6"/><rect x="260" y="240" width="40" height="170" rx="6"/><rect x="320" y="180" width="40" height="230" rx="6"/></g>
+</svg>
+<div class="card c1" style="left:420px;top:150px">REACH<span class="v">+248%</span></div>
+<div class="card c2" style="left:1960px;top:150px">ENGAGEMENT<span class="v">+3.1×</span></div>
+<div class="card c3" style="left:150px;top:1040px">AD CLICK-THROUGH<span class="v">6.4%</span></div>
+<div class="card c4" style="left:2140px;top:1120px">NEW LEADS<span class="v">↑ 412</span></div>
 <div class="center">
- <h1>SITRAL<span class="cursor"></span></h1>
+ <h1>SITRAL</h1>
+ <div class="sub">MARKETING</div>
  <div class="line"></div>
- <div class="tag">tech <b>·</b> code <b>·</b> fixes</div>
+ <div class="tag">strategy <b>·</b> content <b>·</b> growth</div>
+ <div class="web">sitralmarketing.com</div>
 </div>
 </div></body></html>
